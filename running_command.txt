@@ -1,0 +1,8 @@
+python detect.py --weights weight_training_collab/best.pt --conf 0.25 --img-size 640 --source image_try/try2.jpg
+
+python detect.py --weights weight_training_collab/best.pt --conf 0.25 --img-size 640 --source rtsp://admin:sopir234@192.9.201.211:554/Streaming/Channels/102/
+
+
+source venv/bin/activate
+export LD_LIBRARY_PATH=/usr/local/lib64:${LD_LIBRARY_PATH}
+python detect.py --weights weight_training_collab/best.pt --conf 0.25 --img-size 640 --no-trace
